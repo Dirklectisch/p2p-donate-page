@@ -1,4 +1,4 @@
-(ns p2pfoundation.donate
+(ns p2pfoundation.core
   (:require [domina :as dom])
   (:use [domina.xpath :only [xpath]]
         [domina.events :only [listen! target]]
@@ -33,7 +33,7 @@
 
 (defn handle-button-click [evt]
       (let [btn (:target evt)]
-           (set-new-amount (dom/text btn)) ))
+           (set-new-amount (dom/text btn)) )) 
 
 (listen! (xpath "//a[@class='blue_btn']") 
          :click 
