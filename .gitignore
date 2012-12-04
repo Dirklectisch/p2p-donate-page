@@ -2,3 +2,4 @@ out/
 out-debug/
 target/
 .lein-cljsbuild*
+.DS_Store
